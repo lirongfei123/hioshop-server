@@ -5,6 +5,7 @@ module.exports = class extends think.Service {
         let secretKey = think.config('qiniu.secret_key');
         let bucket = think.config('qiniu.bucket');
         let domain = think.config('qiniu.domain');
+        console.log(accessKey, secretKey, bucket, domain);
         let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
         let currentTime = parseInt(new Date().getTime() / 1000) + 600;
         let key = think.uuid(32);
