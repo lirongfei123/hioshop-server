@@ -1,17 +1,5 @@
 const mysql = require('think-model-mysql');
-import * as dotenv from "dotenv";
-let envpath;
-switch (process.env.NODE_ENV) {
-  case "development":
-    envpath = `${__dirname}/../.env.development`;
-    break;
-  case "production":
-    envpath = `${__dirname}/../.env.production`;
-    break;
-  default:
-    envpath = `${__dirname}/../.env.development`;
-}
-dotenv.config({ path: path.resolve(envpath) });
+console.log(process.env.MYSQL_HOST);
 module.exports = {
     handle: mysql,
     database: 'hiolabsDB',
