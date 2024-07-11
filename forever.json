@@ -1,0 +1,6 @@
+{
+    "uid": "jiadian",
+    "script": "./production.js",
+    "cwd": "/var/www/hioshop-server"
+}
+
