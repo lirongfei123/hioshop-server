@@ -28,7 +28,7 @@ module.exports = {
         access_key: 'gacQwkV85-fmERlQGkFhwizAIATYbRs7swtEYjNg',      // 在七牛密钥管理中获取
         secret_key: '3bYuNYJmhs-EjHH6vrJ7Yj65Pe8zZEWc_D4vscSo',    // 在七牛密钥管理中获取
         bucket: 'zhengxuan-jiadian',                    // 请填自己的bucket的名称
-        domain: 'http://jiadiancdn.xixi.fun/'                         // 请填自己的domain域名
+        domain: 'https://jiadiancdn.xixi.fun/'                         // 请填自己的domain域名
     },
     // 在七牛新建一个https的空间，这个是用来存储分享图片的https图片，对应的是goods表中的https_pic_url
     qiniuHttps: {
