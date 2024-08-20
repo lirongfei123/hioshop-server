@@ -7,7 +7,7 @@ module.exports = class extends Base {
     async indexAction() {
         const categoryId = this.get('id');
         const model = this.model('category');
-        const data = await model.limit(10).where({
+        const data = await model.limit(100).where({
             parent_id: 0,
             is_category: 1
         }).order('sort_order ASC').select();
