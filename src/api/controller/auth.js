@@ -19,6 +19,8 @@ module.exports = class extends Base {
     };
     let sessionData = await rp(options);
     sessionData = JSON.parse(sessionData);
+    console.log('-=------------------', sessionData);
+
     if (!sessionData.openid) {
       return this.fail("登录失败，openid无效");
     }
